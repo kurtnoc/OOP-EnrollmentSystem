@@ -42,6 +42,12 @@ public class Student {
         this.program = program;
     }
 
+    public void display(){
+        System.out.printf("Student ID: %s \n", getStudentID());
+        System.out.printf("Student Name: %s \n", getStudentName());
+        System.out.printf("Student Program: %s \n\n", getProgram());
+    }
+
 
 
 

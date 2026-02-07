@@ -41,9 +41,9 @@ public class Course {
     }
 
     public void display(){
-        System.out.printf("Course ID: %s \n", courseID);
-        System.out.printf("Course Name: %s \n", courseName);
-        System.out.printf("Program: %s \n", program);
+        System.out.printf("Course ID: %s \n", getCourseID());
+        System.out.printf("Course Name: %s \n", getCourseName());
+        System.out.printf("Program: %s \n", getProgram());
     }
 
 }
