@@ -1,8 +1,8 @@
-package org.example;
+package org.example.model;
 
 public class Course {
 
-    private String courseID;
+    private int courseID;
     private String courseName;
     private String program;
 
@@ -10,17 +10,17 @@ public class Course {
 
     }
 
-    public Course(String courseID, String courseName, String program){
+    public Course(int courseID, String courseName, String program){
         this.courseID = courseID;
         this.courseName = courseName;
         this.program = program;
     }
 
-    public String getCourseID(){
+    public int getCourseID(){
         return courseID;
     }
 
-    public void setCourseID(String courseID){
+    public void setCourseID(int courseID){
         this.courseID = courseID;
     }
 
@@ -46,4 +46,12 @@ public class Course {
         System.out.printf("Program: %s \n", getProgram());
     }
 
+    @Override
+    public String toString() {
+        return "Course{" +
+                "courseID='" + courseID + '\'' +
+                ", courseName='" + courseName + '\'' +
+                ", program='" + program + '\'' +
+                '}';
+    }
 }
