@@ -9,6 +9,7 @@ public class StudentRegistration {
 
     //CREATE
     public void saveStudent(Student student){
+
         studentList.add(student);
     }
 
