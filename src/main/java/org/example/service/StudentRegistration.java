@@ -21,7 +21,7 @@ public class StudentRegistration {
     //UPDATE
     public void updateStudent(Student student) {
         for (int i = 0; i < studentList.size(); i++){
-            if(studentList.get(i).getStudentID() == (student.getStudentID())){
+            if(studentList.get(i).getID() == (student.getID())){
                 studentList.set(i, student);
                 break;
 
@@ -32,7 +32,7 @@ public class StudentRegistration {
     //REMOVE
     public String delete(Student student){
         for(int i = 0; i < studentList.size(); i++){
-            if(studentList.get(i).getStudentID() == (student.getStudentID())){
+            if(studentList.get(i).getID() == (student.getID())){
                 studentList.remove(i);
                 return "Deleted Successfully";
 
