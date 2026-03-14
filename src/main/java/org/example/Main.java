@@ -333,6 +333,17 @@ public class Main {
 //        //DELETE
 //        courseRegistration.deleteCourse(new Course(1, "Infoman", "BSIT"));
 
+        Instructor instructor = new Instructor();
+        System.out.print("Instructor's Main Task: ");
+        instructor.mainTask();
+
+        Student student = new Student();
+        System.out.print("Student's Main Task: ");
+        student.mainTask();
+
+
+
+
 
 
 

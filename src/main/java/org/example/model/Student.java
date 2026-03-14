@@ -3,6 +3,10 @@ package org.example.model;
 public class Student extends Person {
     private String program;
 
+    public Student(){
+
+    }
+
 
     public Student(int ID, String name, String program){
         super(ID, name);
@@ -32,5 +36,10 @@ public class Student extends Person {
                 ", studentName='" + getName() + '\'' +
                 ", program='" + program + '\'' +
                 '}';
+    }
+
+    @Override
+    public void mainTask() {
+        System.out.println("I Study");
     }
 }
