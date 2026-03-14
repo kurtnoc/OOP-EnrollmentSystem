@@ -333,6 +333,15 @@ public class Main {
 //        //DELETE
 //        courseRegistration.deleteCourse(new Course(1, "Infoman", "BSIT"));
 
+        Instructor instructor = new Instructor();
+        instructor.mainTask();
+
+        Student student = new Student();
+        student.mainTask();
+
+
+
+
 
 
 
